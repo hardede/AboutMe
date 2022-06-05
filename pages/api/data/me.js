@@ -1,6 +1,6 @@
 export const me = {
   siteName: "Hardede Links",
-  avatar: "/avatar.jpg",
+  avatar: "/avatar.jpeg",
   description:
     "<pMy name is Dima, I have been programming for about 1 years. At the moment I practice on various sites.</p>" +
     "<p>Like everyone else, I started by learning the layout of html, css, js. Then I switched to React.</p>" +
