@@ -1,7 +1,23 @@
-import '../styles/globals.css'
+import Head from "next/head";
+import { QueryClient, QueryClientProvider } from "react-query";
+import "../app/assets/styles/globals.scss";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+    },
+  },
+});
 
-export default MyApp
+const MyApp = ({ Component, pageProps }) => {
+  return (
+    <QueryClientProvider client={queryClient}>
+      <main>
+        <Component {...pageProps} />
+      </main>
+    </QueryClientProvider>
+  );
+};
+
+export default MyApp;

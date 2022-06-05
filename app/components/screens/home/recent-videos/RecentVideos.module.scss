@@ -1,0 +1,69 @@
+@import "../../../../assets/styles/media";
+
+.wrapper {
+  @apply bg-zinc-900 p-3 text-white items-center;
+  min-height: 70px;
+  @include media(tablet) {
+    @apply p-2;
+  }
+
+  .heading {
+    @apply text-white flex;
+    @include media(laptop) {
+      @apply block;
+    }
+  }
+  .title {
+    @apply w-1/3 my-auto text-lg;
+    @include media(laptop) {
+      @apply text-center mr-0 w-full mb-4 text-xl;
+    }
+    @include media(tablet) {
+    }
+  }
+
+  .items_wrapper {
+    @apply flex flex-wrap;
+    @include media(laptop) {
+      @apply block;
+    }
+  }
+}
+
+.item {
+  @apply flex items-center my-2 bg-bgColor hover:bg-black transition-colors py-2 px-3 animate-fade duration-300 ease-in-out;
+  width: 47%;
+  height: 60.5px;
+
+  &:nth-child(1) {
+    @apply mr-11;
+  }
+
+  @include media(laptop) {
+    @apply py-1 px-2;
+    width: 100%;
+    &:nth-child(1) {
+      @apply mr-0;
+    }
+  }
+
+  @include media(tablet) {
+    @apply py-1 px-2;
+    width: 100%;
+
+    &:nth-child(2) {
+      @apply mb-3 mr-0;
+    }
+    &:nth-child(3) {
+      @apply mb-3;
+    }
+  }
+
+  > img {
+    @apply mr-3;
+  }
+
+  > span {
+    @apply text-white truncate;
+  }
+}
