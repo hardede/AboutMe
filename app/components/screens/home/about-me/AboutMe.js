@@ -16,7 +16,7 @@ const AboutMe = ({ me }) => {
           width={190}
           height={190}
           className={styles.image}
-          alt={me.siteName}
+          alt="hello"
         />
       </div>
       <div className={styles.heading}>
