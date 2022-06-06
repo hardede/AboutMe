@@ -12,7 +12,7 @@ const AboutMe = ({ me }) => {
     <div className={styles.me}>
       <div className={styles["image-wrapper"]}>
         <Image
-          src={`${APP_URL}/icons/verified.svg`}
+          src={`${APP_URL}/icons/avatar`}
           width={190}
           height={190}
           className={styles.image}
