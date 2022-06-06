@@ -11,8 +11,9 @@ const AboutMe = ({ me }) => {
   return (
     <div className={styles.me}>
       <div className={styles["image-wrapper"]}>
-        <Image
-          src={`${APP_URL}${me.avatar}`}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={me.avatar}
           width={190}
           height={190}
           className={styles.image}
