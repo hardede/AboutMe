@@ -27,9 +27,9 @@ const parseFirstVideo = async name => {
 
 export default async function handler(req, res) {
   const result = [
-    await parseFirstVideo("МихаилНепомнящий"),
-    await parseFirstVideo("UlbiTV"),
-    await parseFirstVideo("REDGroup"),
+    await parseFirstVideo("FreelancerLifeStyle"),
+    await parseFirstVideo("Codevolution"),
+    await parseFirstVideo("WebDevSimplified"),
   ];
   res.status(200).json(result);
 }
